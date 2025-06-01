@@ -11,3 +11,12 @@ matplotlib
 altair
 apscheduler
 lxml
+scikit-learn
+prophet
+numpy
+altair
+scikit-learn
+fuzzywuzzy
+certifi
+
+
