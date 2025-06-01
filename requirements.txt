@@ -1,0 +1,13 @@
+streamlit
+pandas
+yfinance
+transformers
+torch
+requests
+beautifulsoup4
+newspaper3k
+plotly
+matplotlib
+altair
+apscheduler
+lxml
