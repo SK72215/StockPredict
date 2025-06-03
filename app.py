@@ -183,7 +183,7 @@ for symbol in portfolio:
 if metrics_records:
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown("### 🔽 Portfolio Forecast Accuracy Summary")
+        st.markdown("<h6 style='margin-bottom: 10px; color:green;'>🔽 Portfolio Forecast Accuracy Summary</h6>", unsafe_allow_html=True)
         metrics_df = pd.DataFrame(metrics_records)
         styled_df = metrics_df.style.format({"R²": "{:.2f}%", "MAE": "{:.2f}", "RMSE": "{:.2f}"}) \
             .background_gradient(subset=["MAE"], cmap='Reds') \
@@ -192,7 +192,8 @@ if metrics_records:
         st.dataframe(styled_df, use_container_width=True)
 
     with col2:
-        st.subheader("📈 Portfolio Normalized Performance")
+        st.markdown("<h6 style='margin-bottom: 10px; color:green;'>🔽 Portfolio Normalized Performance</h6>", unsafe_allow_html=True)
+
         normalized_df = pd.DataFrame()
         for stock in portfolio:
             df_stock = fetch_data(stock)
